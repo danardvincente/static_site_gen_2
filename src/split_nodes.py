@@ -22,10 +22,6 @@ def text_to_textnodes(text: str) -> list[TextNode]:
     return nodes
 
 
-
-
-
-
 def split_nodes_delimiter(
         old_nodes: list[TextNode], 
         delimiter: str, 
