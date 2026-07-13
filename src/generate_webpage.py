@@ -35,7 +35,7 @@ def generate_page(from_path: str, template_path: str, dest_path: str | Path, bas
             title_match[0], the_title).replace(
             content_match[0], html_content)
     final_template_content = final_template_content.replace('href="/', 'href="' + basepath)
-    final_template_content = final_template_content.replace('src="/', 'src="' + basepath)
+    final_template_content = final_template_content.replace('src="/', f"src=\"{basepath}")
 
 
 
